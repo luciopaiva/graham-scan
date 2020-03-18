@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/luciopaiva/graham-scan.git"
   },
+  "files": [
+    "graham-scan.mjs"
+  ],
   "keywords": [
     "convex hull",
     "convex envelope",
