@@ -59,4 +59,13 @@ describe("Graham scan", function () {
             [[1,0], [2,1], [0,1]],  // hull expected to be counter-clockwise
             `actual: ${hull.toString()}`);
     });
+
+    it("should choose leftmost pivot when multiple candidates exist", function () {
+        const scan = new GrahamScan();
+        scan.setPoints([[1,0], [0,0], [0,1], [1,1]]);
+        const hull = scan.getHull();
+        assert.deepStrictEqual(hull,
+            [[0,0], [1,0], [1,1], [0,1]],
+            `actual: ${hull.toString()}`);
+    });
 });

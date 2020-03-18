@@ -42,8 +42,8 @@ export default class GrahamScan {
             return angleA - angleB;
         });
 
-        // remove points with repeated angle
-        for (let i = 0; i < indexes.length - 1; i++) {
+        // remove points with repeated angle (but never the pivot, so start from i=1)
+        for (let i = 1; i < indexes.length - 1; i++) {
             if (angles[indexes[i]] === angles[indexes[i + 1]]) {  // next one has same angle and is farther
                 indexes[i] = REMOVED;  // remove it logically to avoid O(n) operation to physically remove it
             }
