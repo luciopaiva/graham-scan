@@ -4,7 +4,7 @@
   "description": "A JavaScript implementation of the Graham scan algorithm for finding the convex hull of a set of points.",
   "main": "graham-scan.mjs",
   "scripts": {
-    "test": "nyc mocha --require esm",
+    "test": "nyc mocha",
     "report-coverage": "nyc report --reporter=text-lcov --require esm > coverage.lcov && codecov"
   },
   "repository": {
@@ -48,6 +48,9 @@
     ],
     "include": [
       "graham-scan.mjs"
+    ],
+    "require": [
+      "esm"
     ]
   }
 }
