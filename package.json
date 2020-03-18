@@ -38,18 +38,5 @@
     "c8": "^7.1.0",
     "codecov": "^3.6.5",
     "mocha": "^7.1.1"
-  },
-  "nyc": {
-    "all": true,
-    "reporter": [
-      "html",
-      "text"
-    ],
-    "include": [
-      "graham-scan.mjs"
-    ],
-    "require": [
-      "esm"
-    ]
   }
 }
