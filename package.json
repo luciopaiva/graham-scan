@@ -1,0 +1,44 @@
+{
+  "name": "graham-scan",
+  "version": "1.0.0",
+  "description": "A JavaScript implementation of the Graham scan algorithm for finding the convex hull of a set of points.",
+  "main": "graham-scan.mjs",
+  "scripts": {
+    "test": "nyc  --reporter=html --reporter=text mocha --require esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciopaiva/graham-scan.git"
+  },
+  "keywords": [
+    "convex hull",
+    "convex envelope",
+    "convex closure",
+    "convex",
+    "graham",
+    "graham scan",
+    "gift wrapping",
+    "jarvis march",
+    "chan algorithm"
+  ],
+  "author": {
+    "name": "Lucio Paiva",
+    "url": "https://luciopaiva.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luciopaiva/graham-scan/issues"
+  },
+  "homepage": "https://github.com/luciopaiva/graham-scan#readme",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "graham-scan.mjs"
+    ]
+  }
+}
