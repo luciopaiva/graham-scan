@@ -10,6 +10,14 @@ export default class GrahamScan {
         this.points = [];
     }
 
+    clear() {
+        this.points = [];
+    }
+
+    getPoints() {
+        return this.points;
+    }
+
     setPoints(points) {
         this.points = points.slice();  // copy
     }

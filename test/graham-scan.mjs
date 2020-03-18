@@ -7,6 +7,17 @@ const {describe, it} = mocha;
 
 describe("Graham scan", function () {
 
+    it("should add and clear points", function () {
+        const scan = new GrahamScan();
+        assert.strictEqual(scan.getPoints().length, 0);
+        scan.addPoint([1,0]);
+        assert.strictEqual(scan.getPoints().length, 1);
+        scan.addPoint([1,0]);
+        assert.strictEqual(scan.getPoints().length, 2);
+        scan.clear();
+        assert.strictEqual(scan.getPoints().length, 0);
+    });
+
     it("should ignore single point", function () {
         const scan = new GrahamScan();
         scan.addPoint([1,0]);
