@@ -86,3 +86,15 @@ grahamScan.setPoints([[10, 20], [30, 40]]);
 ## Tests
 
     npm test
+
+## FAQ
+
+### Is this the fastest way to build a convex hull?
+
+No. Graham scan runs in O(n log n), where n is the total number of points in the set. [Chan's algorithm](https://en.wikipedia.org/wiki/Chan%27s_algorithm) does a bit better, O(n log h), where h is the number of vertices composing the final hull.
+
+It is still much better than Jarvis march, though, which runs in O(nh).
+
+### Why use the .mjs extension?
+
+Node.js projects that use this library by directly copying the script file instead of installing it via npm would need to add `type: module` to `package.json`, which may be undesired.
