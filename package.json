@@ -1,5 +1,5 @@
 {
-  "name": "graham-scan",
+  "name": "@lucio/graham-scan",
   "version": "1.0.0",
   "description": "A JavaScript implementation of the Graham scan algorithm for finding the convex hull of a set of points.",
   "main": "graham-scan.mjs",

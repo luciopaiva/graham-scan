@@ -7,7 +7,7 @@ A JavaScript implementation of the [Graham scan](https://en.wikipedia.org/wiki/G
 
 ## Installation
 
-    npm i graham-scan
+    npm i @lucio/graham-scan
 
 ## Usage
 
